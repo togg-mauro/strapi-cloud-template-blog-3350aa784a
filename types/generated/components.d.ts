@@ -510,23 +510,6 @@ export interface TrumoreRedefiningMobilitySlider extends Schema.Component {
   };
 }
 
-export interface TrumoreSmartMobilityDeviceAndTrumoreContent
-  extends Schema.Component {
-  collectionName: 'components_trumore_smart_mobility_device_and_trumore_contents';
-  info: {
-    displayName: 'Smart Mobility Device & Trumore Content';
-    description: '';
-  };
-  attributes: {
-    sectionName: Attribute.String;
-    headingPrefix: Attribute.String;
-    heading: Attribute.String;
-    subHeading: Attribute.String;
-    features: Attribute.Component<'components.feature', true>;
-    image: Attribute.Media;
-  };
-}
-
 export interface TrumoreTrumoreMobileAppContent extends Schema.Component {
   collectionName: 'components_trumore_trumore_mobile_app_contents';
   info: {
@@ -581,7 +564,6 @@ declare module '@strapi/types' {
       'trumore.meet-the-trumore-slider': TrumoreMeetTheTrumoreSlider;
       'trumore.purpose-content': TrumorePurposeContent;
       'trumore.redefining-mobility-slider': TrumoreRedefiningMobilitySlider;
-      'trumore.smart-mobility-device-and-trumore-content': TrumoreSmartMobilityDeviceAndTrumoreContent;
       'trumore.trumore-mobile-app-content': TrumoreTrumoreMobileAppContent;
     }
   }

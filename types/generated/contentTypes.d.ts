@@ -1045,36 +1045,6 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
-export interface ApiTestPageTestPage extends Schema.SingleType {
-  collectionName: 'test_pages';
-  info: {
-    singularName: 'test-page';
-    pluralName: 'test-pages';
-    displayName: 'Test Page';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    prvoPolje: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::test-page.test-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::test-page.test-page',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1099,7 +1069,6 @@ declare module '@strapi/types' {
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::test-page.test-page': ApiTestPageTestPage;
     }
   }
 }
