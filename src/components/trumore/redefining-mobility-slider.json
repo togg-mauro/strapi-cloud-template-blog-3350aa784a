@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_trumore_redefining_mobility_sliders",
+  "info": {
+    "displayName": "Redefining Mobility Slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    }
+  }
+}

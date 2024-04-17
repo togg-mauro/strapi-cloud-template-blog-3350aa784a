@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_trumore_purpose_contents",
+  "info": {
+    "displayName": "Purpose Content"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "headingPrefix": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    }
+  }
+}

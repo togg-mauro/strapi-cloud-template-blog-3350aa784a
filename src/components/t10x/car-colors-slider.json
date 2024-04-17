@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_t10x_car_colors_sliders",
+  "info": {
+    "displayName": "Car colors slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.image"
+    }
+  }
+}

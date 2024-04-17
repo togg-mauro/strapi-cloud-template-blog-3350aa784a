@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_car_sliders",
+  "info": {
+    "displayName": "Car Slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_layout_slider_sections",
+  "info": {
+    "displayName": "Slider Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionTemplate": {
+      "type": "enumeration",
+      "enum": [
+        "NONE"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.button"
+    }
+  }
+}

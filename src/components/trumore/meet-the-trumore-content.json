@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_trumore_meet_the_trumore_contents",
+  "info": {
+    "displayName": "Meet The Trumore Content"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "headerSuffix": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

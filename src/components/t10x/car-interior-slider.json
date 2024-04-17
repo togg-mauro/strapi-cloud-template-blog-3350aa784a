@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_t10x_car_interior_sliders",
+  "info": {
+    "displayName": "Car interior slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    }
+  }
+}

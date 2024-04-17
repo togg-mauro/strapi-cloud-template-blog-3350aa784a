@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_trumore_meet_the_trumore_sliders",
+  "info": {
+    "displayName": "Meet The Trumore Slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    }
+  }
+}

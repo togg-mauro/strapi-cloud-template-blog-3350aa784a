@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_t10x_car_comfort_sliders",
+  "info": {
+    "displayName": "Car comfort slider"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.slider"
+    }
+  }
+}
