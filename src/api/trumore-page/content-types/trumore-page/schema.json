@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "trumore_pages",
+  "info": {
+    "singularName": "trumore-page",
+    "pluralName": "trumore-pages",
+    "displayName": "Trumore Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "text"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "trumore.hero-content",
+        "trumore.purpose-content",
+        "trumore.redefining-mobility-slider",
+        "trumore.meet-the-trumore-content",
+        "trumore.meet-the-trumore-slider",
+        "trumore.trumore-mobile-app-content",
+        "trumore.devices-and-trumore-content"
+      ]
+    }
+  }
+}

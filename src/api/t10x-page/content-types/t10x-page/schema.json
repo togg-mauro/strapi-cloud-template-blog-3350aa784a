@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "t10x_pages",
+  "info": {
+    "singularName": "t10x-page",
+    "pluralName": "t10x-pages",
+    "displayName": "T10x Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "text",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "t10x.car-slider",
+        "t10x.car-360-content",
+        "t10x.car-design-content",
+        "t10x.car-interior-slider",
+        "t10x.car-inspiration-content",
+        "t10x.car-colors-slider",
+        "t10x.car-sound-system-content",
+        "t10x.car-comfort-slider",
+        "t10x.car-safety-content",
+        "t10x.car-trugo-content"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

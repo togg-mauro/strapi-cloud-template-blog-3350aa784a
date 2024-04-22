@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * global router
+ * t10x-page router
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::global.global');
+module.exports = createCoreRouter('api::t10x-page.t10x-page');

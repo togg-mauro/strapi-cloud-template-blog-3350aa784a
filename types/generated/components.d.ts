@@ -222,68 +222,6 @@ export interface LayoutSliderSection extends Schema.Component {
   };
 }
 
-export interface SharedMedia extends Schema.Component {
-  collectionName: 'components_shared_media';
-  info: {
-    displayName: 'Media';
-    icon: 'file-video';
-  };
-  attributes: {
-    file: Attribute.Media;
-  };
-}
-
-export interface SharedQuote extends Schema.Component {
-  collectionName: 'components_shared_quotes';
-  info: {
-    displayName: 'Quote';
-    icon: 'indent';
-  };
-  attributes: {
-    title: Attribute.String;
-    body: Attribute.Text;
-  };
-}
-
-export interface SharedRichText extends Schema.Component {
-  collectionName: 'components_shared_rich_texts';
-  info: {
-    displayName: 'Rich text';
-    icon: 'align-justify';
-    description: '';
-  };
-  attributes: {
-    body: Attribute.RichText;
-  };
-}
-
-export interface SharedSeo extends Schema.Component {
-  collectionName: 'components_shared_seos';
-  info: {
-    name: 'Seo';
-    icon: 'allergies';
-    displayName: 'Seo';
-    description: '';
-  };
-  attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-    shareImage: Attribute.Media;
-  };
-}
-
-export interface SharedSlider extends Schema.Component {
-  collectionName: 'components_shared_sliders';
-  info: {
-    displayName: 'Slider';
-    icon: 'address-book';
-    description: '';
-  };
-  attributes: {
-    files: Attribute.Media;
-  };
-}
-
 export interface T10XCar360Content extends Schema.Component {
   collectionName: 'components_t10x_car_360_contents';
   info: {
@@ -442,6 +380,21 @@ export interface TrugoHeroContent extends Schema.Component {
   };
 }
 
+export interface TrumoreDevicesAndTrumoreContent extends Schema.Component {
+  collectionName: 'components_trumore_devices_and_trumore_contents';
+  info: {
+    displayName: 'Devices and Trumore Content';
+  };
+  attributes: {
+    sectionName: Attribute.String;
+    headingPrefix: Attribute.String;
+    heading: Attribute.String;
+    subHeading: Attribute.String;
+    features: Attribute.Component<'components.feature', true>;
+    image: Attribute.Media;
+  };
+}
+
 export interface TrumoreHeroContent extends Schema.Component {
   collectionName: 'components_trumore_hero_contents';
   info: {
@@ -543,11 +496,6 @@ declare module '@strapi/types' {
       'layout.header': LayoutHeader;
       'layout.hero-section': LayoutHeroSection;
       'layout.slider-section': LayoutSliderSection;
-      'shared.media': SharedMedia;
-      'shared.quote': SharedQuote;
-      'shared.rich-text': SharedRichText;
-      'shared.seo': SharedSeo;
-      'shared.slider': SharedSlider;
       't10x.car-360-content': T10XCar360Content;
       't10x.car-colors-slider': T10XCarColorsSlider;
       't10x.car-comfort-slider': T10XCarComfortSlider;
@@ -559,6 +507,7 @@ declare module '@strapi/types' {
       't10x.car-sound-system-content': T10XCarSoundSystemContent;
       't10x.car-trugo-content': T10XCarTrugoContent;
       'trugo.hero-content': TrugoHeroContent;
+      'trumore.devices-and-trumore-content': TrumoreDevicesAndTrumoreContent;
       'trumore.hero-content': TrumoreHeroContent;
       'trumore.meet-the-trumore-content': TrumoreMeetTheTrumoreContent;
       'trumore.meet-the-trumore-slider': TrumoreMeetTheTrumoreSlider;

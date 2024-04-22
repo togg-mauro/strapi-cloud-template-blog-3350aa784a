@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "trugo_pages",
+  "info": {
+    "singularName": "trugo-page",
+    "pluralName": "trugo-pages",
+    "displayName": "Trugo Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "string"
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "trugo.hero-content"
+      ]
+    }
+  }
+}

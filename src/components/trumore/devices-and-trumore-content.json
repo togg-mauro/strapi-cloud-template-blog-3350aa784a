@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_trumore_devices_and_trumore_contents",
+  "info": {
+    "displayName": "Devices and Trumore Content"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "headingPrefix": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.feature"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
